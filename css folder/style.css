@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#row-1{
+    background-color: tomato;
+    
+}
+#data01 img{
+    width: 10px;
+    height: auto;
+}
+#data01 span{
+    font-family: Edu Australia VIC WA NT Hand Guides, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: whitesmoke;
+    font-style: italic;
+}
+#data02 img{
+    width: 10px;
+    height: auto;
+}
+#data02 span{
+    font-family: Edu Australia VIC WA NT Hand Guides, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: whitesmoke;
+    font-style: italic;
+}
+#data03 span{
+    font-family: Edu Australia VIC WA NT Hand Guides, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: whitesmoke;
+    font-style: italic;
+}
+
+#row-2{
+    background-color: lightgray;
+}
+nav{
+    background-color: lightgray;
+}
+nav ul{
+    list-style: none;
+}
+nav .container{
+    background-color: lightgray;
+    width: 1200px;
+    margin: auto;
+}
+nav .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li{
+    font-size: 20px;
+    font-family: Edu Australia VIC WA NT Hand Guides, Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 20px;
+    color: black;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: Lora, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    position: relative;
+}
+nav ul li a:hover{
+    background-color: tomato;
+    color: whitesmoke;
+}
+nav ul li a::after{
+    content:'';
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background-color: whitesmoke;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+nav .sub_parent{
+    position: relative;
+}
+nav .sub_menu{
+    position: absolute;
+    background-color: tomato;
+    width="300px";
+    opacity: 0;
+    visibility:hidden ;
+    margin-top: 100px;
+    transition: 0.5s;
+}
+nav .sub_menu li{
+    width: 100%;
+}
+nav.sub_menu li a{
+    display: block;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+}
+nav .sub_parent:hover.sub_menu{
+    opacity: 1;
+    margin-top: 0;
+    visibility: visible;
+
+}
